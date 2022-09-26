@@ -1,0 +1,32 @@
+
+<div class ="primary">
+<h2>Checking Account: ${{this.singleaccounts.primaryaccountnumber}}</h2>
+</div>
+<div class ="details">
+  <a  routerLink="/checkingaccountdetail" routerLinkActive="active">view details</a>
+</div>
+
+
+
+
+<div class = "deposit">
+<i class="fa fa-credit-card" style='font-size:50px'></i>
+<b class ="text"> Deopsit </b>
+</div>
+<div class = "viewhistory"><a routerLink="/depositwithdraw" routerLinkActive="active">Go to Deposit</a></div>
+
+
+
+<div class ="savings">
+  <h2>Savings Account: ${{this.singleaccounts.savingsaccountnumber}}</h2>
+</div>
+<div class ="details">
+  <a routerLink="/savingsaccountdetail" routerLinkActive="active">view details</a>
+</div>
+
+
+<div class = "withdraw">
+  <i class="fa fa-money" style='font-size:50px'></i>
+  <b class ="text"> Withdraw </b>
+  </div>
+<div class = "viewwithdraw"><a routerLink="/depositwithdraw" routerLinkActive="active">Go to Withdraw</a></div>

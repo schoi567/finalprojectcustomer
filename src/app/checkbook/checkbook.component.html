@@ -1,0 +1,16 @@
+
+
+
+  <div class ="result">
+<h1>These are the request history for {{username1}}</h1>
+ <button (click) ="BD()">View History
+ </button>
+ <div *ngFor="let r of checkbookreq1">
+  <p><b>Date:</b> {{r.date}}</p>
+  <p><b>Account Type:</b> {{r.accounttype}}</p>
+  <p><b>Description:</b> {{r.description}}</p>
+  <p><b>Delivered?:</b> {{r.accept}}</p>
+</div>
+
+
+</div>

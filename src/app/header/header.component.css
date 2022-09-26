@@ -1,0 +1,114 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #659db9;
+}
+
+
+div.info {
+  position: relative;
+  top: 3px;
+  right: 80px;
+  width: 100%;
+  text-align: right;
+
+}
+
+
+div.home {
+  position: absolute;
+  top: 10px;
+  left: 150px;
+  width: 100%;
+  text-align: left;
+  background-color: #659db9;
+}
+
+div.account {
+  position: absolute;
+  top: 0px;
+  left: 230px;
+  width: 50%;
+  text-align: left;
+  background-color: #659db9;
+}
+
+div.transfer {
+  position: absolute;
+  top: 0px;
+  left: 350px;
+  width: 50%;
+  text-align: left;
+  background-color: #659db9;
+}
+
+div.request {
+  position: absolute;
+  top: 0px;
+  left: 500px;
+  width: 50%;
+  text-align: left;
+  background-color: #659db9;
+}
+
+
+
+button.home {
+  border: none;
+  font-size: 15px;
+  background-color: #659db9;
+}
+
+
+div.yourinfo{
+  position: absolute;
+  left: 1250px;
+
+  z-index: 1;
+}
+
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;  /* dropdown button (start) text color */
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  z-index: 1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f7f0f0; /* dropdown menu when not hovered */
+  min-width: 170px;
+  z-index: 1;
+  border: none;
+}
+
+
+
+.dropdown-content button {
+  color: rgb(9, 0, 0);  /* dropdown text color */
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+}
+
+.dropdown-content :hover {background-color: rgb(225, 156, 156);
+  /* dropdown box menus when hovered */}
+
+
+.dropdown:hover .dropdown-content {display: block;}  /*this controls dropdown setting  */
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;} /*this controls dropdown setting  */
+

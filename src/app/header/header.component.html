@@ -1,0 +1,57 @@
+<header class="header">
+  <div class="info">
+    <span class="text-muted"> </span>
+
+    <div class="home">
+      <button  class="home" (click)="HomePage()" type="button">Home</button><br>
+  </div>
+
+ <div class="yourinfo">
+  <div class="dropdown">
+      <button *ngIf="UserauthenticationService.isUserLogin()" class="dropbtn">Your Information ▼</button>
+      <div class="dropdown-content">
+        <button (click)="changeprofile()" type="button">Change Your Profile</button><br>
+        <button (click)="Logout()" type="button">Log Out  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </button><br>
+      </div>
+  </div>
+</div>
+
+
+<div class="account">
+  <div class="dropdown">
+    <button *ngIf="UserauthenticationService.isUserLogin()" class="dropbtn">Accounts ▼</button>
+    <div class="dropdown-content">
+      <button (click)="primaryaccount()" type="button">Account History</button><br>
+
+    </div>
+</div>
+</div>
+
+
+<div class="transfer">
+  <div class="dropdown">
+    <button *ngIf="UserauthenticationService.isUserLogin()" class="dropbtn">Transfer ▼</button>
+    <div class="dropdown-content">
+      <button (click)="primaryaccounttransfer()" type="button">Primary Account</button><br>
+      <button (click)="savingsaccounttransfer()" type="button">Savings Account</button><br>
+    </div>
+</div>
+</div>
+
+
+<div class="request">
+  <div class="dropdown">
+    <button *ngIf="UserauthenticationService.isUserLogin()" (click)="BD()"  class="dropbtn">Resquest</button>
+
+</div>
+</div>
+
+</div>
+
+
+
+</header>
+
+
+

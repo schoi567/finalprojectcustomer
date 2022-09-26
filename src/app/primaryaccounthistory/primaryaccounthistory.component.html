@@ -1,0 +1,58 @@
+<div class="bd">
+
+<h1>Deposit and Withdraw history</h1>
+
+  <table>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">amount</th>
+      <th scope="col">approved</th>
+      <th scope="col">date</th>
+      <th scope="col">account</th>
+      <th scope="col">username</th>
+    </tr>
+
+    <ng-container *ngFor="let money of depositwithdrawmoney1">
+        <tr>
+          <td><p>{{money.id}}</p></td>
+          <td><p>{{money.amount}}</p></td>
+          <td><p>{{money.approved}}</p></td>
+          <td><p>{{money.date}}</p></td>
+          <td><p>{{money.account}}</p></td>
+          <td><p>{{money.username}}</p></td>
+
+          </tr>
+    </ng-container>
+  </table>
+
+<br><br>
+  <h1>Money Transfer History (To other accounts)</h1>
+  <table>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">date</th>
+      <th scope="col">sender's username</th>
+      <th scope="col">sender's account type</th>
+      <th scope="col">receiver's username</th>
+      <th scope="col">receiver's account type</th>
+      <th scope="col">amount</th>
+      <th scope="col">status</th>
+    </tr>
+
+    <ng-container *ngFor="let money of alltransfers">
+        <tr>
+          <td><p>{{money.id}}</p></td>
+          <td><p>{{money.date}}</p></td>
+          <td><p>{{money.fromusername}}</p></td>
+          <td><p>{{money.fromaccounttype}}</p></td>
+          <td><p>{{money.receiverusename}}</p></td>
+          <td><p>{{money.toaccounttype}}</p></td>
+          <td><p>${{money.amount}}</p></td>
+          <td><p>{{money.transfer}}</p></td>
+
+          </tr>
+    </ng-container>
+  </table>
+
+  <br><br><br>
+</div>

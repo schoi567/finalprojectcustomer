@@ -1,0 +1,44 @@
+<div class="center">
+  <h1 style="color:rgb(14, 14, 82);">Sign Up</h1>
+  <hr width="40%" color =#ADD8E6 size="2"  align="center">
+</div>
+
+<div class="center">
+<form >
+  <p class="center1"><b> First Name </b> &nbsp; <i class='fas fa-portrait' style='font-size:25px'></i> </p>
+    <input type="text" name="First Name"  placeholder="First Name"  style="height:20px;" [(ngModel)]="customer.firstname">
+  <div class="space"></div>
+  <p class="center1"  ><b>Last Name</b> &nbsp; <i class='fas fa-portrait' style='font-size:25px'></i> </p>
+    <input type="text" name="Last Name" placeholder="Last Name" style="height:20px;" [(ngModel)]="customer.lastname" >
+  <div class="space"></div>
+  <p class="center1"><b>Phone (10 digit number)</b> &nbsp; <i class="fa fa-mobile" aria-hidden="true" style="font-size:25px;"></i> </p>
+  <input type="number" name="Phone" placeholder="Phone Number" style="height:20px;" [(ngModel)]="customer.phonenumber">
+  <div class="space"></div>
+  <p class="center1"><b>Your Email</b>  &nbsp; <i class='far fa-address-card' style='font-size:25px'></i></p>
+    <input type="email" name="Your Email" placeholder="Email Address" style="height:20px;" [(ngModel)]="customer.email">
+  <div class="space"></div>
+  <p class="center1"><b>Username</b>&nbsp; <i class="fa fa-user" aria-hidden="true" style='font-size:25px'></i></p>
+    <input type="text" name="Username" placeholder="Username" style="height:20px;" [(ngModel)]="customer.username">
+  <div class="space"></div>
+
+  <p class="center1"><b>Password</b>&nbsp; <i class="fa fa-key" aria-hidden="true" style='font-size:25px'></i></p>
+    <input type="password" name="Password" placeholder="Password" style="height:20px;" [(ngModel)]="customer.password">
+  <div class="space"></div>
+
+  <p class="center1"><b>Primary Account Number (8 digit number)</b>&nbsp; <i class="fa fa-file-text-o" aria-hidden="true" style='font-size:25px'></i></p>
+  <input type="number" name="Primary Account Number" placeholder="Primary Account Number" style="height:20px;" [(ngModel)]="customer.primaryaccountnumber">
+<div class="space"></div>
+
+<p class="center1"><b>Savings Account Number (8 digit number)</b>&nbsp; <i class="fa fa-file-text-o" aria-hidden="true" style='font-size:25px'></i></p>
+<input type="number" name="Savings Account Number" placeholder="Savings Account Number" style="height:20px;" [(ngModel)]="customer.savingsaccountnumber">
+<div class="space"></div>
+  <br>  <br>
+  <input type="submit" value="Sign Up" class="block1" (click)="signupsuccess()" style="height:30px;">
+</form>
+
+<div class="space1"></div>
+
+</div>
+
+
+

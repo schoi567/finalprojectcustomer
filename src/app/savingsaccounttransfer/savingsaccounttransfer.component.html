@@ -1,0 +1,21 @@
+<div class="center">
+  <h1>Transfer money to another account from your saving account</h1>
+  <form>
+    <p style="font-size:25px"><b> Amount to send </b> &nbsp;  </p>
+    <input type="number" name="amount"  placeholder="Amount"  style="height:20px;" [(ngModel)]="transferamount">
+    <p style="font-size:25px"><b> To </b> </p>
+    <input type="text" name="username"  placeholder="username"  style="height:20px;" [(ngModel)]="receiverusename">
+    <p>{{errormessage}}</p>
+    <br>    <br>    <br>
+<label for="accountype" style="font-size:18px;">Please choose account type of receiver</label>
+<br>
+<select name="accountype" id="accountype"  [(ngModel)]="accountype">
+  <option  name = "primaryaccountnumber"  value="primaryaccountnumber">primaryaccount</option>
+  <option name = "savingsaccountnumber" value="savingsaccountnumber">savingsaccount</option>
+</select>
+<br>    <br>    <br>
+    <input type="submit" (click)="transfersavings()" value="submit" style="height:30px;">
+    </form>
+
+  </div>
+

@@ -1,0 +1,31 @@
+
+
+<h2 class = "header">Request New Checkbook</h2>
+
+<div class = "header">
+  <form #questionTest="ngForm" novalidate>
+  <label for="account">Choose Account Type:  </label>
+
+  <select name="account" id="account"  [(ngModel)]="Singlecheckbookreq.accounttype">
+    <option  name = "primaryaccount"  value="primaryaccount" >Primary Account
+    <option name = "savingsaccount" value="savingsaccount"  >Savings Account
+  </select>
+
+
+  <p class = "header">Description  (Please keep it less than 20 characters)</p>
+
+    <textarea maxlength="20"  type="text" style="height:50px;" name = "description" [(ngModel)]="Singlecheckbookreq.description">
+    </textarea>
+  <br>
+  <input type="submit" (click)="turnin()" value="Submit">
+</form>
+</div>
+
+<div class ="desc">
+  <p><b>Account Type: &nbsp;  </b>{{Singlecheckbookreq.accounttype}}</p>
+  <p><b>Description: &nbsp;  </b>{{Singlecheckbookreq.description}}</p>
+  <button (click)="checkbookhistory()" >Checkbook request history </button>
+
+</div>
+
+

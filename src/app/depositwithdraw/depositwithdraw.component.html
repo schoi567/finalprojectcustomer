@@ -1,0 +1,41 @@
+<div class="total">
+
+<h1 class="deposit">Deposit</h1>
+<form>
+<p><b> Amount to deposit </b> &nbsp;  </p>
+<input type="number" name="amount"  placeholder="Amount"  style="height:20px;" [(ngModel)]="depositamount">
+<div class="space"></div>
+<label for="accountype" style="font-size:18px;">Please choose account type</label>
+
+  <br>
+<select name="accountype" id="accountype"  [(ngModel)]="accountypedeposit" >
+  <option  name = "primaryaccountnumber"  value="primaryaccountnumber">primaryaccount</option>
+  <option name = "savingsaccountnumber" value="savingsaccountnumber">savingsaccount</option>
+</select>
+
+<div class="space"></div> <br>
+<input type="submit" (click)="deposit()" value="submit" style="height:30px;">
+</form>
+
+</div>
+
+
+
+
+<div class="total1">
+<h1 class="withdraw">Withdraw</h1>
+<form>
+<p><b> Amount to withdraw </b> &nbsp;  </p>
+<input type="number" name="amount" placeholder="Amount"  style="height:20px;" [(ngModel)]="withdrawamount">
+<div class="space"></div>
+<label for="accountype" style="font-size:18px;">Please choose account type</label>
+<br>
+<select name="accountype" id="accountype"  [(ngModel)]="accountypewithdraw">
+  <option  name = "primaryaccountnumber"  value="primaryaccountnumber">primaryaccount</option>
+  <option name = "savingsaccountnumber" value="savingsaccountnumber">savingsaccount</option>
+</select>
+
+<div class="space"></div> <br>
+<input type="submit" (click)="withdraw()" value="submit" style="height:30px;">
+</form>
+</div>

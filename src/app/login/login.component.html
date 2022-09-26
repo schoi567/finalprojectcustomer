@@ -1,0 +1,34 @@
+  <div class="center">
+    <h1>Please sign in</h1>
+    <form (ngSubmit)="handleLogin()">
+    <input type="text" name="username"  placeholder="Username" [(ngModel)]="username">
+    <div class="space"></div>
+    <input type="password" name="password" placeholder="Password"  [(ngModel)]="password">
+    <div class="space"></div>
+    <div class="alert alert-danger" *ngIf='invalidLogin'>{{errorMessage}}</div>
+
+      <div class="space"></div>
+
+      <input type="checkbox" id="chkPrint" name="Print" value = "false" (change)="myFunction()">
+       <label for="rememberMe">Remember me</label>
+
+
+       <div class="space"></div>
+
+
+      <input type="submit"   value = "Log In" class="block">
+  </form>
+
+  <div class="space1"></div>
+
+  <hr width="40%" color =#ADD8E6 size="3"  align="center">
+
+  <input type="submit" (click)="signup()" value = "Sign Up!" class="block1">
+
+
+
+
+
+</div>
+
+
